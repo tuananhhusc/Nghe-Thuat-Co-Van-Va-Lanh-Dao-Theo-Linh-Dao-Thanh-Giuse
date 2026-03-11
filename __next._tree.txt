@@ -1,0 +1,6 @@
+:HL["/Nghe-Thuat-Co-Van-Va-Lanh-Dao-Theo-Linh-Dao-Thanh-Giuse/_next/static/chunks/a09ee824bd245bbc.css","style"]
+:HL["/Nghe-Thuat-Co-Van-Va-Lanh-Dao-Theo-Linh-Dao-Thanh-Giuse/_next/static/media/14e23f9b59180572-s.p.9c448f3c.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Nghe-Thuat-Co-Van-Va-Lanh-Dao-Theo-Linh-Dao-Thanh-Giuse/_next/static/media/2a65768255d6b625-s.p.d19752fb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Nghe-Thuat-Co-Van-Va-Lanh-Dao-Theo-Linh-Dao-Thanh-Giuse/_next/static/media/8c2eb9ceedecfc8e-s.p.21935807.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Nghe-Thuat-Co-Van-Va-Lanh-Dao-Theo-Linh-Dao-Thanh-Giuse/_next/static/media/e1ccd2766b08c828-s.p.838318db.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"buildId":"ra-KTQTPqWGgD-nUhPas4","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
