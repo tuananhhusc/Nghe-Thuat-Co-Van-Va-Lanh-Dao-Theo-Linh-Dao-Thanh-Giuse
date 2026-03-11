@@ -1,26 +1,86 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@plugin "@tailwindcss/typography";
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-navy: #1B2A4A;
+  --color-navy-light: #2A3F6A;
+  --color-burgundy: #6B1D2A;
+  --color-burgundy-light: #8B2D3A;
+  --color-gold: #C5A55A;
+  --color-gold-light: #D4BA7A;
+  --color-cream: #FAF8F5;
+  --color-parchment: #F0EBE3;
+  --font-serif: var(--font-playfair), "Georgia", serif;
+  --font-body: var(--font-lora), "Georgia", serif;
+  --font-sans: system-ui, -apple-system, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-navy);
+}
+
+.dark ::selection {
+  background-color: var(--color-gold-light);
+  color: #000;
+}
+
+/* Zen Mode Styles */
+body.zen-mode header,
+body.zen-mode footer,
+body.zen-mode aside,
+body.zen-mode nav,
+body.zen-mode .share-bar,
+body.zen-mode .toc-overlay,
+body.zen-mode .toc-mobile,
+body.zen-mode button[aria-label="Mục lục"] {
+  display: none !important;
+}
+
+body.zen-mode .max-w-7xl {
+  max-width: 850px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+body.zen-mode main > div {
+  justify-content: center !important;
+}
+
+/* Print CSS */
+@media print {
+  header, footer, nav, button, .share-bar, .fixed {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt;
+  }
+  
+  table {
+    page-break-inside: avoid;
+  }
+  
+  h2, h3 {
+    page-break-after: avoid;
+  }
+  
+  a {
+    color: black !important;
+    text-decoration: none !important;
+  }
 }
